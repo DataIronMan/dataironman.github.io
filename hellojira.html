@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="https://unpkg.com/@atlaskit/css-reset@2.0.0/dist/bundle.css" media="all">
-        <script src="https://connect-cdn.atl-paas.net/all.js" async></script>
+      <!--  <link rel="stylesheet" href="https://unpkg.com/@atlaskit/css-reset@2.0.0/dist/bundle.css" media="all">
+        <script src="https://connect-cdn.atl-paas.net/all.js" async></script>-->
         <style>
             @keyframes slideInRight {
               from {
@@ -75,8 +75,8 @@
                 region: "eu-gb", // The region your integration is hosted in.
                 serviceInstanceID: "e26d27f4-1224-43fd-bb4b-46241ce7da8e", // The ID of your service instance.
                 openChatByDefault: true,
-                showLauncher: true,
-                //carbonTheme: 'g10',
+                showLauncher: false,
+                carbonTheme: 'g10',
     
     
                 onLoad: function(instance) {
@@ -98,11 +98,13 @@
                     });
                 }};
             
+            
             setTimeout(function(){
               const t=document.createElement('script');
               t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
               document.head.appendChild(t);
             });
+            
           </script>
     
     </body>
