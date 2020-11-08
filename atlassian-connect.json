@@ -2,7 +2,7 @@
     "name": "Hello Jira",
     "description": "first jira app",
     "key": "com.gbm.myapp",
-    "baseUrl": "https://4dfc21f18c3a.ngrok.io",
+    "baseUrl": "https://dataironman.github.io/",
     "vendor": {
         "name": "Gulf Business Machines",
         "url": "http://gbmme.com"
