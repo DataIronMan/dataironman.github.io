@@ -5,7 +5,7 @@
         <script src="https://connect-cdn.atl-paas.net/all.js" async></script>
     </head>
     <body>       
-        <button>Pls click me</button>
+        <button class="chatLauncher">Pls click me</button>
         
         <script>
             window.watsonAssistantChatOptions = {
@@ -22,6 +22,14 @@
               document.head.appendChild(t);
             });
             AP.resize('400px','100%');
+          </script>
+          <script>
+              const button = document.querySelector('chatLauncher');
+              // Add the event listener to open your web chat.
+              button.addEventListener('click', function clickListener() {
+                    alert('this is a test');
+                });
+
           </script>
     
     </body>
