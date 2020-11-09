@@ -5,7 +5,7 @@
         <script src="https://connect-cdn.atl-paas.net/all.js" async></script>
     </head>
     <body>       
-        <button class="chatLauncher">Pls click me</button>
+        <button class="chatLauncher" onclick="launchDialog();">Pls dialog</button>
         
         <script>
             window.watsonAssistantChatOptions = {
@@ -23,14 +23,24 @@
             });
             AP.resize('400px','100%');
           </script>
-          <script>
-              const button = document.querySelector('chatLauncher');
-              // Add the event listener to open your web chat.
-              button.addEventListener('click', function clickListener() {
-                    alert('this is a test');
-                });
+       <script>
+           function launchDialog(){
+            AP.dialog.create({
+                key: 'my-module-key',
+                width: '500px',
+                height: '200px',
+                chrome: true,
+                buttons: [
+                            {
+                             text: 'my button',
+                                identifier: 'my_unique_identifier'
+                            }
+            ]
+                }).on("close", callbackFunc);
+           }
 
-          </script>
+       </script>
+
     
     </body>
 </html>
