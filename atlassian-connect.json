@@ -22,8 +22,8 @@
             {
                 "url": "/autolaunch.html",
                 "options": {
-                    "height": "400px",
-                     "width": "400px",
+                    "height": "500px",
+                     "width": "500px",
                     "header": {
                         "value": "Ask GBM HR"
                     }
