@@ -20,7 +20,7 @@
         ],
         "dialogs":[
             {
-                "url": "/autolaunch.html",
+                "url": "/hellojira.html",
                 "options": {
                     "size":"fullscreen",
                     "header": {
