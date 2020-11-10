@@ -17,6 +17,18 @@
                 "key": "hello-dialog",
                 "url": "/hellodialog.html"
             }
+        ],
+        "dialogs":[
+            {
+                "url": "/autolaunch.html",
+                "options": {
+                    "size": "fullscreen",
+                    "header": {
+                        "value": "Watson Dialog"
+                    }
+                },
+                "key": "gbm-watson-dialog"
+            }
         ]
     }
 }
