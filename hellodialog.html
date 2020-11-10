@@ -5,18 +5,17 @@
         <script src="https://connect-cdn.atl-paas.net/all.js" async></script>
     </head>
     <body>       
-        <button class="chatLauncher" onclick="launchDialog();">This dialog</button>
+        <button class="chatLauncher" onclick="launchDialog();">That dialog</button>
         
     
        <script>
            function launchDialog(){
             AP.dialog.create({
-                key: 'my-module-key',
+                //key: 'my-module-key',
                 url: '/autolaunch.html',
                 width: '500px',
                 height: '400px',
-                chrome: true
-            
+                chrome: true            
                 }).on("close", callbackFunc);
            }
 
