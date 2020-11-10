@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="https://unpkg.com/@atlaskit/css-reset@2.0.0/dist/bundle.css" media="all">
-        <script src="https://connect-cdn.atl-paas.net/all.js" async></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <link href="https://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet"/>
+        <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+        
     </head>
     <body>
-        <iframe src="hellojira.html" title=""  height="40%"width="30%"></iframe> 
+        <!-- <iframe src="hellojira.html" title=""  height="40%"width="30%"></iframe> 
+
+
+        <label><input type='checkbox' id='isModal' /> Is Modal? </label>
+        <a href='#' class='link'>link</a>-->
+        <a href='#' class='link_iframe'>link (iframe)</a>       
+
+        <div id='withIframe'>
+        <iframe id='if'  src='' height="400px" width="100%"></iframe>
+        </div>
     
+    <script>
+
+$("#simple").dialog(
+{ 
+    autoOpen: false,
+    open: function()
+    {
+       $("#withIframe").dialog( "moveToTop" );
+    },
+    focus: function( event, ui ) {
+       $("#withIframe").dialog( "moveToTop" );
+    }
+});
+
+
+
+
+$("#withIframe").dialog(
+  { 
+    autoOpen: false,
+    open: function(ev, ui){
+       $('#if').attr('src','hellojira.html');
+       $(this).dialog( "moveToTop" );
+       $(this).dialog( { 
+      height: 500,
+      width: 400
+    });
+    }
+  });
+
+ 
+  
+/*
+$(".link").click(function() {
+  $("#simple").dialog('option','modal',$('#isModal').prop('checked')).dialog( "open" );
+});
+*/
+
+$(".link_iframe").click(function() {
+  $("#withIframe").dialog( "open" );
+});
+        </script>
     </body>
 </html>

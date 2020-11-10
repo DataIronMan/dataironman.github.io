@@ -5,15 +5,15 @@
         <script src="https://connect-cdn.atl-paas.net/all.js" async></script>
     </head>
     <body>       
+        <button class="chatLauncher" onclick="launchDialog();">Pls dialog</button>
         
         <script>
             window.watsonAssistantChatOptions = {
                 integrationID: "e708938d-e6a0-4454-85f7-9ef5e78eb452", // The ID of this integration.
                 region: "eu-gb", // The region your integration is hosted in.
                 serviceInstanceID: "e26d27f4-1224-43fd-bb4b-46241ce7da8e", // The ID of your service instance.
-                //openChatByDefault: true,
                 // Config option to change Carbon themes.
-                 //carbonTheme: 'g90',
+                 carbonTheme: 'g90',
                 onLoad: function(instance) { instance.render(); }
               };
             setTimeout(function(){
@@ -21,9 +21,25 @@
               t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
               document.head.appendChild(t);
             });
-            //AP.resize('400px','100%');
+            AP.resize('400px','100%');
           </script>
-      
+       <script>
+           function launchDialog(){
+            AP.dialog.create({
+                key: 'my-module-key',
+                width: '500px',
+                height: '400px',
+                chrome: true,
+                buttons: [
+                            {
+                             text: 'my button',
+                                identifier: 'my_unique_identifier'
+                            }
+            ]
+                }).on("close", callbackFunc);
+           }
+
+       </script>
 
     
     </body>

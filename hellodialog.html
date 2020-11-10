@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <link rel="stylesheet" href="https://unpkg.com/@atlaskit/css-reset@2.0.0/dist/bundle.css" media="all">
+        <script src="https://connect-cdn.atl-paas.net/all.js" async></script>
+    </head>
+    <body>       
+        <button class="chatLauncher" onclick="launchDialog();">Pls dialog</button>
+        
+    
+       <script>
+           function launchDialog(){
+            AP.dialog.create({
+                key: 'my-module-key',
+                width: '500px',
+                height: '400px',
+                chrome: true,
+                buttons: [
+                            {
+                             text: 'my button',
+                                identifier: 'my_unique_identifier'
+                            }
+            ]
+                }).on("close", callbackFunc);
+           }
+
+       </script>
+
+    
+    </body>
+</html>

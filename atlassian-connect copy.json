@@ -1,5 +1,5 @@
 {
-    "name": "Hello dialog",
+    "name": "Hello Jira",
     "description": "first jira app",
     "key": "com.gbm.myapp",
     "baseUrl": "https://dataironman.github.io/",
@@ -14,8 +14,8 @@
     "modules": {
         "serviceDeskPortalFooters": [
             {
-                "key": "hello-dialog",
-                "url": "/hellodialog.html"
+                "key": "hello-jira",
+                "url": "/hellojira.html"
             }
         ]
     }
