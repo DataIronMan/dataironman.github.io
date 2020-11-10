@@ -21,7 +21,7 @@
                         "value": "Watson Dialog"
                     }
                 },
-                "key": "com.gbm.watsondialog"
+                "key": "gbm-watson-dialog"
             }
         ]
     }
