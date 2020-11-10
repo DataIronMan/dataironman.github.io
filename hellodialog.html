@@ -4,17 +4,20 @@
       <link rel="stylesheet" href="https://unpkg.com/@atlaskit/css-reset@2.0.0/dist/bundle.css" media="all">
         <script src="https://connect-cdn.atl-paas.net/all.js" async></script>
     </head>
-    <body>       
-        <button class="chatLauncher" onclick="launchDialog();">Have a question? Talk with us here</button>
+    <body> 
+
         
+        <section id="content" class="ac-content">
+            <button class="chatLauncher" onclick="launchDialog();">Have a question? Talk with us here</button>
+        </section>
     
        <script>
            function launchDialog(){
             AP.dialog.create({
                 key: 'gbm-watson-dialog',
                 //url: '/autolaunch.html',
-                width: '500px',
-                height: '400px',
+                //width: '500px',
+                //height: '400px',
                 chrome: true            
                 }).on("close", callbackFunc);
            }
