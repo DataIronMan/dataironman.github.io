@@ -5,7 +5,7 @@
         <script src="https://connect-cdn.atl-paas.net/all.js" async></script>
     </head>
     <body>       
-        <button class="chatLauncher" onclick="launchDialog();">Pls dialog</button>
+        <button class="chatLauncher" onclick="launchDialog();">My dialog</button>
         
     
        <script>
@@ -14,13 +14,8 @@
                 key: 'my-module-key',
                 width: '500px',
                 height: '400px',
-                chrome: true,
-                buttons: [
-                            {
-                             text: 'my button',
-                                identifier: 'my_unique_identifier'
-                            }
-            ]
+                chrome: true
+            
                 }).on("close", callbackFunc);
            }
 
