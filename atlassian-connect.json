@@ -24,7 +24,7 @@
                 "options": {
                     "size":"fullscreen",
                     "header": {
-                        "value": "Ask GBM HR"
+                        "value": "GBM Ask HR Assistant"
                     }
                 },
                 "key": "gbm-watson-dialog"
